@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'main/css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'main/css/materialize.css' %}" rel="stylesheet">
+
+    <title>Python Agent</title>
+
+</head>
+<body>
+  {% include "main/includes/navbar.html" %}
+  <div class="container" style=" max-width: 1500px;position: relative;top: 0;">
+    <br>
+    <div class="flex-container">
+      {% block content %}
+    {% endblock %}
+   
+    </div>
+    
+      
+  </div>
+    
+  </div>
+
+
+</body>
+</html>
