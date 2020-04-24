@@ -2,13 +2,37 @@
   body {
     font-family: "Poppins", sans-serif;
     height: 100vh;
-    background: rgb(207, 203, 203);
+    background: rgb(32, 29, 29);
   }
+  
   
   
   
 
   
+  .wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+  }
+  
+  #formContent {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    padding: 0px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    text-align: center;
+  }
   
     
   /* Simple CSS3 Fade-in-down Animation */
@@ -99,30 +123,37 @@
   }
 
   .flex-container{
-  background-image:linear-gradient(
-        to right bottom,
-         rgba(126, 213, 111, 0.801),
-         rgba(49,100,131,0.8)), 
-         url('../img/NavArt.png');
-    background-size: cover;
-    background-position:top;
     border-radius: 20px;
   }
   .flex-container .row{
     display: flex;
     flex-flow: row wrap;
+    background-image: url('../img/NavArt.png');
+    height: 800px;
+    background-size: cover;
+
     
   }
-  
+
+ #formFooter {
+    background-color: #f6f6f6;
+    border-top: 1px solid #dce8f1;
+    padding: 25px;
+    text-align: center;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+  }
+  /*
   .flex-container .row >div {
     background-color: transparent;
-    width: 410px;
+    /*width: 410px;
     margin: 10px;
     text-align: center;
     font-size: 30px;
     color: white;
     height: fit-content;
-  }
+  } 
+  */
   .flex-container .row img{
     width: 100%;
     height: 60%;
@@ -132,3 +163,76 @@
     color: unset;
     text-decoration: none;
   }
+  .lds-grid {
+    display: inline-block;
+    position: absolute;
+    left: 45%;
+    top: 10%;
+    width: 70px;
+    height: 80px;
+    text-align: center;
+  }
+  
+  .lds-grid div {
+    position: absolute;
+    left: 20px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #dfc;
+    animation: lds-grid 1.2s linear infinite;
+  }
+  .lds-grid div:nth-child(1) {
+    top: 8px;
+    left: 8px;
+    animation-delay: 0s;
+  }
+  .lds-grid div:nth-child(2) {
+    top: 8px;
+    left: 32px;
+    animation-delay: -0.4s;
+  }
+  .lds-grid div:nth-child(3) {
+    top: 8px;
+    left: 56px;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(4) {
+    top: 32px;
+    left: 8px;
+    animation-delay: -0.4s;
+  }
+  .lds-grid div:nth-child(5) {
+    top: 32px;
+    left: 32px;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(6) {
+    top: 32px;
+    left: 56px;
+    animation-delay: -1.2s;
+  }
+  .lds-grid div:nth-child(7) {
+    top: 56px;
+    left: 8px;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(8) {
+    top: 56px;
+    left: 32px;
+    animation-delay: -1.2s;
+  }
+  .lds-grid div:nth-child(9) {
+    top: 56px;
+    left: 56px;
+    animation-delay: -1.6s;
+  }
+  @keyframes lds-grid {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
